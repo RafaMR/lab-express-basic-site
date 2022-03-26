@@ -1,0 +1,12 @@
+ <h1> HIS WONDEROUS BIOGRAPHY</h1>
+
+    <p>
+        {{name}} {{lastName}} was born in {{age.month}} of {{age.year}} 
+    </p>
+    <p> {{name}} studied in
+
+        {{#each studies}}
+        {{this}},
+        {{/each}}
+    </p>
+
