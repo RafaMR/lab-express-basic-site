@@ -1,17 +1,14 @@
-
-html,
 body {
-  height: 100%;
-}
-
-body {
-
   font-family: sans-serif;
+  background-color: black;
+  color: white;
   }
 
-body {
-    background-image: url('/images/julio_playa.jpeg');
-    background-size: cover;
-    margin: 0 auto;
-    text-align: center;
+.container{
+  padding: 200px 0;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
 }

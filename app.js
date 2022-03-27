@@ -1,15 +1,15 @@
 const express = require ('express');
 const hbs = require ('hbs');
 
-hbs.registerPartials(__dirname + '/views/partials');
-
 const app = express();
-
-app.set('views', __dirname + '/views');
 
 app.set('view engine', 'hbs');
 
+app.set('views', __dirname + '/views');
 
+hbs.registerPartials(__dirname + '/views/partials');
+
+app.use(express.static('public'));
 
 
 
@@ -21,8 +21,8 @@ app.get('/', (request, response) => {
                 year: 1961,
                 month: 08,
             },
-            albums: ["El Amor", "Julio", "Rommantic Classics"],
-            awards: ["Grammy", "Star on the Wlak of Fame", "Guiness record"],
+            albums: ["El Amor", "Julio", "Romantic Classics"],
+            awards: ["Grammy", "Star on the Wlak of Fame", "Guiness records"],
 
     });
 }); 
@@ -36,7 +36,7 @@ app.get('/about', (request, response) => {
                 year: 1961,
                 month: 08,
             },
-            albums: ["El Amor", "Julio", "Rommantic Classics"],
+            albums: ["El Amor", "Julio", "Romantic Classics"],
             awards: ["Grammy", "Star on the Wlak of Fame", "Guiness record"],
 
     });

@@ -1,12 +1,16 @@
- <h1> HIS WONDEROUS BIOGRAPHY</h1>
 
-    <p>
-        {{name}} {{lastName}} was born in {{age.month}} of {{age.year}} 
-    </p>
-    <p> {{name}} studied in
-
-        {{#each studies}}
-        {{this}},
+<div class="container">
+    <h1>{{name}} {{lastName}} Life</h1>
+    <p>{{name}} {{lastName}} was born in {{age.month}} of {{age.year}}</p>
+    <p> {{name}} {{lastName}} main awards include: </p>
+    <ul>
+        {{#each awards}}
+        <li>{{this}}</li>
         {{/each}}
-    </p>
+    </ul>
+</div>
 
+
+
+
+ 
