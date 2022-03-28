@@ -1,14 +1,24 @@
 
 <div class="container">
-    <h1>{{name}} {{lastName}} Life</h1>
-    <p>{{name}} {{lastName}} was born in {{age.month}} of {{age.year}}</p>
-    <p> {{name}} {{lastName}} main awards include: </p>
-    <ul>
-        {{#each awards}}
-        <li>{{this}}</li>
-        {{/each}}
-    </ul>
+    <div class="d-flex justify-content-center">
+        <div>
+            <h1>{{name}} {{lastName}} Life</h1>
+            <p><b>{{name}} {{lastName}} was born in {{age.month}} of {{age.year}}</b></p>
+            <p><b> {{name}} {{lastName}} main awards include: </b></p>
+            <ul>
+             {{#each awards}}
+             <li><b>{{this}}</b></li>
+            {{/each}}
+            </ul>
+        </div>
+    </div>
 </div>
+
+<div class="d-flex justify-content-center">
+    <img src="premio.jpeg" alt="julio">
+</div>
+
+
 
 
 

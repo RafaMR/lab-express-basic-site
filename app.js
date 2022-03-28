@@ -4,13 +4,11 @@ const hbs = require ('hbs');
 const app = express();
 
 app.set('view engine', 'hbs');
-
 app.set('views', __dirname + '/views');
 
 hbs.registerPartials(__dirname + '/views/partials');
 
 app.use(express.static('public'));
-
 
 
 app.get('/', (request, response) => {

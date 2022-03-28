@@ -1,13 +1,8 @@
 body {
   font-family: sans-serif;
-  background-color: black;
-  color: white;
+  background-color: rgb(161, 211, 219);
+  color: black;
   }
-
-.container{
-  padding: 200px 0;
-  text-align: center;
-}
 
 ul {
   list-style-type: none;
